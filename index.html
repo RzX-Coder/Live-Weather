@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <input type="text" id="location-input" placeholder="Enter location">
+            <button id="search-button">Search</button>
+            <button id="dark-mode-toggle">Dark Mode</button>
+        </header>
+        <main id="weather-container">
+            <h1 id="city-name"></h1>
+            <div id="weather-info">
+                <img id="weather-icon" src="images/default.png" alt="Weather icon">
+                <div id="temperature"></div>
+                <div id="description">𝐋𝐢𝐯𝐞 𝐖𝐞𝐚𝐭𝐡𝐞𝐫</div>
+            </div>
+            <div id="additional-info">
+                <div id="humidity"></div>
+                <div id="wind-speed"></div>
+                <div id="aqi"></div>
+                <div id="aqi-status"></div>
+            </div>
+        </main>
+        <section id="forecast-container" class="hidden">
+            <div class="forecast-card">
+                <img id="icon-1" src="day1.png" alt="Day 1 icon">
+                <div id="day-1" class="day-name">𝐃𝐀𝐘-𝟏</div>
+                <div id="temp-1" class="temperature">--°C</div>
+            </div>
+            <div class="forecast-card">
+                <img id="icon-2" src="day2.png" alt="Day 2 icon">
+                <div id="day-2" class="day-name">𝐃𝐀𝐘-𝟐</div>
+                <div id="temp-2" class="temperature">--°C</div>
+            </div>
+            <div class="forecast-card">
+                <img id="icon-3" src="day3.png" alt="Day 3 icon">
+                <div id="day-3" class="day-name">𝐃𝐀𝐘-𝟑</div>
+                <div id="temp-3" class="temperature">--°C</div>
+            </div>
+        </section>
+        <footer>
+            <p>★𝙲𝙾𝙿𝚈𝚁𝙸𝙶𝙷𝚃 ©️ 𝙼𝙰𝙳𝙴 𝙱𝚈 𝚁𝙴𝚈𝙰𝚉★</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
